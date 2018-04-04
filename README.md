@@ -20,6 +20,28 @@ import LoadingClick from 'loading-click'
 Vue.use(LoadingClick, /** options **/)
 ```
 
+## Usage
+
+``` html
+<template>
+  <button v-loading-click="test"></button>
+</template>
+
+<script>
+export default {
+  methods: {
+    clickTest() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve()
+        }, 5000)
+      })
+    }
+  }
+}
+</script>
+```
+
 ## API
 
 #### [Options]
