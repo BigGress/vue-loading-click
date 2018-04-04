@@ -1,0 +1,25 @@
+.sg-loading-btn {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+
+  margin: 0 2px;
+
+  border-top: 1px solid #409EFF;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #409EFF;
+  border-left: 1px solid transparent;
+  border-radius: 50%;
+
+  animation: rotate 1s ease infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
