@@ -16,6 +16,11 @@ function addLoading($event, el, attr, vnode, config) {
   let parent = vnode.context;
   let template = config.template;
   let eventPromise;
+  // let funName = attr.
+
+  if (!attr.expression) {
+    throw new Error(`v-loading-click must set a function`);
+  }
 
   if (attr.expression in parent) {
     eventPromise = Promise.resolve(parent[attr.expression]($event));
