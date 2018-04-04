@@ -1,6 +1,6 @@
 {
   "name": "loading-click",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "loading for vue",
   "main": "index.js",
   "scripts": {
