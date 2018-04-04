@@ -22,13 +22,6 @@ module.exports = {
       loader: "babel-loader",
       include: [resolve(__dirname, "../src")]
     },
-    // {
-    //   test: /\.css$/,
-    //   use: [
-    //     {loader: "style-loader"},
-    //     {loader: "css-loader"},
-    //   ]
-    // }
   ]
   },
   plugins: [
@@ -38,6 +31,9 @@ module.exports = {
       to: resolve(__dirname, "../dist")
     }, {
       from: resolve(__dirname, "../src/base.css"),
+      to: resolve(__dirname, "../dist")
+    }, {
+      from: resolve(__dirname, "../README.md"),
       to: resolve(__dirname, "../dist")
     }])
   ]
