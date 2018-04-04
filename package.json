@@ -6,6 +6,8 @@
   "scripts": {
     "test": "npm run test",
     "clear": "rm -rf ./dist",
+    "dev": "./node_modules/.bin/webpack --config ./build/webpack.config.js --watch",
+    "example": "./node_modules/.bin/webpack-dev-server --config ./build/webpack.example.config.js",
     "build:test": "npm run clear && ./node_modules/.bin/webpack --config ./build/webpack.config.js",
     "build": "npm run clear && export NODE_ENV=production && ./node_modules/.bin/webpack --config ./build/webpack.config.js"
   },
@@ -17,8 +19,14 @@
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
     "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
     "file-save": "^0.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.20.3",
     "vue": "^2.5.16",
+    "vue-loader": "^14.2.2",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"
